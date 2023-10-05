@@ -1,0 +1,45 @@
+# Finalisiertes Konzept für eine WebApplication für Schulungsmanagement mit IntelliJ und Kotlin Multiplattform
+
+## Entwicklungsumgebung
+
+- **IntelliJ IDEA 2023.3:**
+  - Die gesamte Entwicklung der Anwendung wird in der IntelliJ IDEA 2023.3 Umgebung durchgeführt.
+  - Nutzung der integrierten Tools und Features von IntelliJ für effiziente und produktive Entwicklung.
+
+## Technische Umsetzung
+
+### Frontend
+
+- **Technologien:**
+  - **React Framework:** Weiterhin wird das React Framework für die Erstellung der Benutzeroberfläche verwendet.
+  - **Kotlin/JS:** Verwendung von Kotlin/JS für die Schreibung des Frontend-Codes in Kotlin, der in JavaScript transpiliert wird.
+
+### Backend
+
+- **Technologien:**
+  - **Kotlin/JVM:** Das Backend wird in Kotlin geschrieben und auf der JVM ausgeführt.
+  - **Ktor Framework:** Verwendung des Ktor Frameworks für die Backend-Entwicklung.
+
+### Multiplattform-Entwicklung
+
+- **Kotlin Multiplattform-Projekt:**
+  - Erstellung eines Kotlin Multiplattform-Projekts in IntelliJ, um sowohl das Backend als auch das Frontend innerhalb desselben Projekts zu entwickeln.
+  - Gemeinsamer Code, der sowohl vom Backend als auch vom Frontend genutzt wird, kann in einem gemeinsamen Modul platziert werden.
+
+#### Anpassungen für Kotlin Multiplattform:
+
+1. **Projektstruktur:**
+   - Aufteilung des Projekts in verschiedene Module für Backend, Frontend und gemeinsamen Code.
+   - Konfiguration der Build-Scripts, um die Transpilierung und Ausführung für verschiedene Plattformen zu handhaben.
+
+2. **Code-Sharing:**
+   - Nutzung der Möglichkeit, Code zwischen Backend und Frontend zu teilen, um die Konsistenz zu gewährleisten und Duplizierung zu vermeiden.
+   - Gemeinsame Logik, wie z.B. Validierung und Datenmodelle, wird im gemeinsamen Modul platziert.
+
+3. **Testing:**
+   - Verwendung von Kotlin-Test-Frameworks, um Tests für den gemeinsamen, Backend- und Frontend-Code zu schreiben.
+   - Ausführung von Tests innerhalb der IntelliJ-Umgebung für eine nahtlose Entwicklungserfahrung.
+
+### Zusammenfassung der Änderungen:
+
+Die Entwicklung der WebApplication für Schulungsmanagement wird nun als Kotlin Multiplattform-Projekt in IntelliJ IDEA 2023.3 durchgeführt. Sowohl das Backend als auch das Frontend werden in Kotlin geschrieben, wobei Kotlin/JS für das Frontend und Kotlin/JVM für das Backend verwendet wird. Die Projektstruktur wird so organisiert, dass Code zwischen den Plattformen geteilt werden kann, um eine konsistente und wartbare Codebasis zu gewährleisten. Alle Entwicklungs- und Testaktivitäten werden innerhalb der IntelliJ-Umgebung durchgeführt, um die Produktivität und Effizienz zu maximieren.
